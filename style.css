@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  background-color: #e5e5e5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(74, 74, 74, 1);
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main {
+  margin: auto;
+  width: 754px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Сортировка по пересадкам */
+.main-transfer-sorter {
+  width: 232px;
+  height: 252px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+
+.sorter-heading p {
+  margin: 20px 20px 20px 20px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(74, 74, 74, 1);
+  line-height: 12px;
+}
+
+.transfer-sorter-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-sorter-label-input {
+  margin: 0 20px 20px 20px;
+}
+
+/* .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+} */
+
+.main-ticket {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.ticket-sorter {
+  width: 502px;
+  height: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.sorter-cheap,
+.sorter-quick,
+.sorter-optimal {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 502px;
+  height: 50px;
+  border: 1px solid rgba(223, 229, 236, 1);
+  display: inline-block;
+  margin: auto;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(74, 74, 74, 1);
+  line-height: 20px;
+  text-align: center;
+}
+
+.sorter-cheap {
+  border-radius: 5px 0 0 5px;
+}
+
+.sorter-optimal {
+  border-radius: 0 5px 5px 0;
+}
+
+/* Билет */
+.ticket-card {
+  width: 502px;
+  height: 184px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 20px;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-price {
+  width: 462px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+}
+
+.price p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+
+  color: rgba(33, 150, 243, 1);
+}
+
+.card-variant p {
+  margin: 0;
+}
+
+.card-variant {
+  width: 462px;
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+/* свойства text p */
+.title {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: left;
+
+  color: rgba(160, 176, 185, 1);
+}
+
+.meaning {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.variant-time,
+.variant-duration {
+  width: 141px;
+  padding-right: 20px;
+}
+
+.variant-transfer {
+  width: 140px;
+}
+
+.hide {
+  opacity: 2;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}

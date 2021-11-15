@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>S7</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="fullscreen">
+      <header class="header">
+        <div class="logo">
+          <img src="img/Logo.png" alt="logo" />
+        </div>
+      </header>
+      <div class="main">
+        <div class="main-transfer-sorter">
+          <div class="sorter-heading">
+            <p>КОЛИЧЕСТВО ПЕРЕСАДОК</p>
+
+            <div class="transfer-sorter-label">
+              <div class="sorter-checkbox">
+                <div class="transfer-sorter-label-input">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox all"
+                    id="check"
+                    name="checkbox"
+                    value="all"
+                  />Все
+                  <label for="checkbox"></label>
+                </div>
+              </div>
+              <div class="sorter-checkbox">
+                <div class="transfer-sorter-label-input">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox nothing"
+                    id="check"
+                    name="checkbox"
+                    value="nothing"
+                    rel="nothing"
+                  />Без пересадок
+                  <label for="checkbox"></label>
+                </div>
+              </div>
+              <div class="sorter-checkbox">
+                <div class="transfer-sorter-label-input">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox one"
+                    id="checkbox"
+                    name="checkbox"
+                    value="one"
+                    rel="one"
+                  />1 пересадка
+                  <label for="checkbox"></label>
+                </div>
+              </div>
+              <div class="sorter-checkbox">
+                <div class="transfer-sorter-label-input">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox two"
+                    id="check"
+                    name="checkbox"
+                    value="two"
+                    rel="two"
+                  />2 пересадки<label for="checkbox"></label>
+                </div>
+              </div>
+              <div class="sorter-checkbox">
+                <div class="transfer-sorter-label-input">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox three"
+                    id="check"
+                    name="checkbox"
+                    value="three"
+                    rel="three"
+                  />3 пересадки
+                  <label for="checkbox"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-ticket">
+          <nav class="ticket-sorter">
+            <button class="ticket sorter-cheap" data-filter="cheap">
+              САМЫЙ ДЕШЕВЫЙ
+            </button>
+            <button class="ticket sorter-quick" data-filter="quick">
+              САМЫЙ БЫСТРЫЙ
+            </button>
+            <button class="ticket sorter-optimal" data-filter="optimal">
+              ОПТИМАЛЬНЫЙ
+            </button>
+          </nav>
+          <!-- 1 билет -->
+          <div class="ticket-card" id="two">
+            <div class="card-price">
+              <span class="price">13400 p</span>
+              <div class="logo-s7">
+                <img src="img/S7 Logo.jpg" alt="s7" />
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">10:45 – 08:00</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">21ч 15м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">2 пересадки</p>
+                <p class="meaning">HKG, JNB</p>
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">11:20 – 00:50</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">13ч 30м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">2 пересадки</p>
+                <p class="meaning">HKG</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 билет -->
+          <div class="ticket-card" id="one">
+            <div class="card-price">
+              <span class="price">7000</span>
+              <div class="logo-s7">
+                <img src="img/S7 Logo.jpg" alt="s7" />
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">10:45 – 08:00</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">21ч 15м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">1 пересадка</p>
+                <p class="meaning">HKG, JNB</p>
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">11:20 – 00:50</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">13ч 30м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">1 пересадка</p>
+                <p class="meaning">HKG</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 билет -->
+          <div class="ticket-card" id="nothing">
+            <div class="card-price">
+              <span class="price">5600</span>
+              <div class="logo-s7">
+                <img src="img/S7 Logo.jpg" alt="s7" />
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">10:45 – 08:00</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">21ч 15м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">Без пересадок</p>
+              </div>
+            </div>
+            <div class="card-variant">
+              <div class="variant-duration">
+                <p class="title">MOW – HKT</p>
+                <p class="meaning">11:20 – 00:50</p>
+              </div>
+              <div class="variant-time">
+                <p class="title">В ПУТИ</p>
+                <p class="meaning">13ч 30м</p>
+              </div>
+              <div class="variant-transfer">
+                <p class="title">Без пересадок</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
